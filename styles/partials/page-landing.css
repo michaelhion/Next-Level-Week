@@ -1,0 +1,15 @@
+:root{
+    font-size: 40%;/*modificar as medidas em rem*/
+}
+
+#page-landing{
+    background-color: var(--color-primary);
+}
+
+#page-landing container{
+    color: var(--color-text-in-primary);
+}
+
+.logo-container{
+    height: 10rem;
+}
