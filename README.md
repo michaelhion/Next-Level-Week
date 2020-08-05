@@ -17,7 +17,7 @@ Pull requests são bem vindos. A applicação ainda esta em fase de desenvolvime
 ### Features
 
 
-- [] backend
+- [ ] backend
 
 ## Licença
 MIT License
