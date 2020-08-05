@@ -19,6 +19,10 @@ Pull requests são bem vindos. A applicação ainda esta em fase de desenvolvime
 
 - [ ] backend
 - [x] frontend
+- [x] Criação da página principal
+- [x] Criação da página de cadastro de Professores
+- [x] Criação da página de estudos 
+- [ ] Criação do filtro de professores/matérias
 
 ## Licença
 MIT License
