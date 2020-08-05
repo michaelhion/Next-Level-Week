@@ -4,7 +4,7 @@
  ## Proffy
 
 
-Proffy é um aplicativo web open source criado na **nextlevelweek** e pode ser usado como plataforma de ensino online, utilizando as tecnologias html. css e javaScript
+Proffy é um aplicativo web open source criado na **\#nextlevelweek** da Rocketseat e pode ser usado como plataforma de ensino online, utilizando as tecnologias html. css e javaScript
 
 ## Instalação
 
