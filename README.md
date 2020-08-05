@@ -1,7 +1,7 @@
 # Next Level Week 2
  Curso oferecido pela rocketseat durante uma semana (de 03 a 07 de agosto de 2020)
 
- #<center>**Proffy**<center>
+ ##Proffy
 
 
 Proffy é um aplicativo web open source criado na **nextlevelweek** e pode ser usado como plataforma de ensino online, utilizando as tecnologias html. css e javaScript
