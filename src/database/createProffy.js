@@ -1,4 +1,4 @@
-module.exports = async function (db, { proffyValue, classValue,classScheduleValues }) {
+module.exports = function (db, { proffyValue, classValue,classScheduleValues }) {
     //inserir dados na tabela proffy
     const insertedProffy = await db.run(`
         INSERT INTO proffys(
@@ -25,7 +25,7 @@ module.exports = async function (db, { proffyValue, classValue,classScheduleValu
                 proffy_id
             ) VALUES (
                 "${classValue.subject}",
-                "${classValue.cost}",
+                ${classValue.cost}",
                 "${proffy_id}"
             );
     `)

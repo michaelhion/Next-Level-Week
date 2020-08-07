@@ -1,19 +1,19 @@
-const DataBase = require('./db')
+const DataBase = require("./db")
 const createProffy = require('./createProffy')
 
 DataBase.then(async (db)=>{
     //inserir dados
 
-    proffyValue = {
+    proffysValue = {
             name:"Diego Fernandes",
             avatar:"https://avatars2.githubusercontent.com/u/2254731?s=460&amp;u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&amp;v=4",
             whatsapp:"11999999999",
             bio:"Entusiasta das melhores tecnologias de química avançada.Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já passaram por uma das minhas explosões.",
         },
 
-        classValue = {
+        classValue ={
             subject:"Química",
-            cost:"20"
+            cost:"20",
             //o id virá pelo banco de dados
         }
 
@@ -30,7 +30,7 @@ DataBase.then(async (db)=>{
             time_to:1000
             }
         ]
-        await createProffy(db, { proffyValue, classValue, classScheduleValues })
+        await createProffy(db,{proffyValue,classValue,classScheduleValues})
 
     //consultar dados inseridos
 })
