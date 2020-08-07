@@ -4,7 +4,7 @@ const createProffy = require('./createProffy')
 DataBase.then(async (db)=>{
     //inserir dados
 
-    proffysValue = {
+    proffyValue = {
             name:"Diego Fernandes",
             avatar:"https://avatars2.githubusercontent.com/u/2254731?s=460&amp;u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&amp;v=4",
             whatsapp:"11999999999",
@@ -13,7 +13,7 @@ DataBase.then(async (db)=>{
 
         classValue ={
             subject:"Química",
-            cost:"20",
+            cost:"20"
             //o id virá pelo banco de dados
         }
 
