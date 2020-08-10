@@ -40,7 +40,7 @@ DataBase.then(async (db)=>{
     //consultar as classes de um determinado professor 
     //e trazer junto os dados do professor
     const selectedClassesAndProffys = await db.all(`
-        SELECT classes.*, proffys.*
+        SELECT classes.* , proffys.*
         FROM proffys
         JOIN classes ON (classes.proffy_id = proffy_id)
         WHERE classes.proffy_id = 1;
