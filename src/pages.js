@@ -19,7 +19,7 @@ async function pageStudy(req, res) {
     const query = `
         SELECT classes.*, proffys.*
         FROM proffys
-        JOIN classes ON (classes.proffy_id = proffy.id)
+        JOIN classes ON (classes.proffy_id = proffys.id)
         WHERE EXISTS (
         SELECT class_schedule.*
         FROM class_schedule
@@ -28,7 +28,7 @@ async function pageStudy(req, res) {
         AND class_schedule.time_from <= ${timeToMinutes}
         AND class_schedule.time_to > ${timeToMinutes}
         )
-        AND classes.subject = '${filters.subject}'
+        AND classes.subject = ${filters.subject}
     `
     //caso haja  erro na hora da consulta do banco de dados.
     try {
@@ -36,10 +36,12 @@ async function pageStudy(req, res) {
         const proffys = await db.all(query)
 
         return res.render('study.html' , { proffys, subjects, filters, weekdays})
+        console.log("executou o cath")
 
 
     } catch (error) {
         console.log(error)
+        console.log('fiquei em erro')
     }
 }
 

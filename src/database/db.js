@@ -20,7 +20,7 @@ function execute(db) {
 
         CREATE TABLE IF NOT EXISTS class_schedule (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            class_id INTEGER,
+            classes_id INTEGER,
             weekday INTEGER,
             time_from INTEGER,
             time_to INTEGER
